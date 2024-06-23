@@ -1,5 +1,7 @@
 package ar.edu.unju.fi.service.imp;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import ar.edu.unju.fi.entity.Inmueble;
@@ -15,6 +17,11 @@ public class InmuebleServiceImp implements InmuebleService{
 	@Override
 	public Inmueble insert(Inmueble inmueble) {
 		return inmuebleRepository.save(inmueble);
+	}
+
+	@Override
+	public List<Inmueble> getAll() {
+		return inmuebleRepository.findAll();
 	}
 
 }
