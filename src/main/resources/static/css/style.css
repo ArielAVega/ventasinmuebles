@@ -1,0 +1,42 @@
+body{
+	padding: 1em;
+	background-color: transparent;
+}
+
+.card{
+	flex-direction: row;
+	max-width: 30em;
+	background-color: #898989;
+	color: #fff;
+	box-shadow: 0 7px 7px rgba(0,0,0,0.180);
+}
+
+.card img{
+	max-width: 30%;
+	margin: auto;
+	padding: 0.5em;
+	border: 0.9em;
+}
+
+.card-body{
+	display: flex;
+	justify-content: space-between;
+}
+
+.text-section{
+	max-width: 60%;
+}
+
+.cta-section{
+	max-width: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+.cta-section .btn{
+	padding: 0.3em 0.5em;
+	/*background-color: #898989;
+	border-color: #898989;*/
+}
